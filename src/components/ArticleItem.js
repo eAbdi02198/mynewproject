@@ -27,6 +27,8 @@ export default function ArticleItem({
           <span>📂 {category}</span>
           <span>⏱ {readingTime} دقیقه</span>
         </div>
+        <Link to={`/EditArticle/${id}`} className="edit-link">ویرایش مقاله</Link>
+
 
         <button className="delete-btn" onClick={onDelete}>حذف</button>
       </div>

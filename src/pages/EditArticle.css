@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .eddit-article-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fafafa;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+  }
+  
+  .eddit-article-form:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+    font-size: 16px;
+  }
+  
+  .form-group input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
