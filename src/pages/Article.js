@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import './Article.css';
 import { useParams } from 'react-router-dom';
+import './Article.css';
 
 export default function Article() {
-  const { id } = useParams();
-  const [articleData, setArticleData] = useState(null);
+  const { id } = useParams();             // گرفتن id از پارامتر URL
+  const [articleData, setArticleData] = useState(null); // مقدار اولیه null
 
   useEffect(() => {
-    fetch("https://68a078926e38a02c5818cd15.mockapi.io/articles")
+    // fetch فقط مقاله مربوط به id مشخص را می‌گیره
+    fetch(`https://68a078926e38a02c5818cd15.mockapi.io/articles/${id}`)
       .then(res => res.json())
-      .then(data => {
-        const article = data.find(item => item.id == +id);
-        setArticleData(article);
-      })
+      .then(data => setArticleData(data))
       .catch(err => console.error("Error fetching article:", err));
   }, [id]);
 
+  // نمایش لودینگ تا داده آماده نشه
   if (!articleData) {
     return <p>در حال بارگذاری ...</p>;
   }
