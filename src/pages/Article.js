@@ -10,7 +10,7 @@ export default function Article() {
     fetch("https://68a078926e38a02c5818cd15.mockapi.io/articles")
       .then(res => res.json())
       .then(data => {
-        const article = data.find(item => item.id === +id);
+        const article = data.find(item => item.id == +id);
         setArticleData(article);
       })
       .catch(err => console.error("Error fetching article:", err));
