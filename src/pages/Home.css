@@ -1,0 +1,20 @@
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  

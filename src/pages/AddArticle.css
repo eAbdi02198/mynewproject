@@ -1,0 +1,62 @@
+/* AddArticle.css */
+.add-article-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .add-article-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .add-article-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-article-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .add-article-form input,
+  .add-article-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .add-article-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .add-article-form button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-article-form button:hover {
+    background-color: #45a049;
+  }
+  
