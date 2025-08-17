@@ -17,7 +17,7 @@ export default function EditArticle() {
   });
 
   useEffect(() => {
-    fetch(`https://68a078926e38a02c5818cd15.mockapi.io/https/articles/${articleId}`)
+    fetch(`https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/articles/${articleId}`)
       .then(res => res.json())
       .then(data => setEditArticleData(data))
       .catch(err => console.error(err));
@@ -30,7 +30,7 @@ export default function EditArticle() {
   const submitEditHandler = (e) => {
     e.preventDefault();
     // ارسال درخواست PUT به سرور
-    fetch(`https://68a078926e38a02c5818cd15.mockapi.io/https/articles/${articleId}`, {
+    fetch(`https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/articles/${articleId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

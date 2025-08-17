@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import ArticleItem from "../components/ArticleItem";
 import './Home.css'
-const API_URL = "https://68a078926e38a02c5818cd15.mockapi.io/articles";
+const API_URL = "https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/articles";
 
 export default function Home() {
   const [articles, setArticles] = useState([]);

@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-
+import aks1 from '../images/article1.webp'
 export default function About() {
   return (
     <section className="about">
@@ -21,7 +21,7 @@ export default function About() {
 
         <div className="about-image">
           <img
-            src="/images/article1.webp"
+            src={aks1}
             alt="درباره ما"
           />
         </div>

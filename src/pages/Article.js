@@ -8,7 +8,7 @@ export default function Article() {
 
   useEffect(() => {
     // fetch فقط مقاله مربوط به id مشخص را می‌گیره
-    fetch(`https://68a078926e38a02c5818cd15.mockapi.io/articles/${id}`)
+    fetch(`https://68a1e6ee6f8c17b8f5db0df3.mockapi.io/articles/${id}`)
       .then(res => res.json())
       .then(data => setArticleData(data))
       .catch(err => console.error("Error fetching article:", err));
